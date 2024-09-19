@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>First Tailwind HTML</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-center p-10">
+
+    <div class="bg-[#fcd9d3] flex justify-center items-center p-4 relative">
+        <!-- Center-aligned logo -->
+        <div>
+            <img src="./images/logo_header.png" alt="Logo" />
+        </div>
+    
+        <!-- Right-aligned flag -->
+        <div class="absolute right-10 top-1/2 transform -translate-y-1/2">
+            <img src="./images/en.png" alt="English Language" />
+        </div>
+    </div>
+
+
+    <div class="flex items-center space-x-2">
+        <!-- Message Icon Button -->
+        <button type="button" class="flex items-center p-0 w-6">
+          <img src="./images/message_icon.svg" alt="message" class="w-6 h-6">
+        </button>
+      
+        <!-- Marquee Text Container -->
+        <div class="flex-1 overflow-hidden">
+          <div class="whitespace-nowrap animate-marquee">
+            <!-- Marquee Text -->
+            <div class="inline-block px-4 py-2">
+              ⭐️⭐️To visit our official website, be sure to use the link below, <a href="https://www.Lucky66.com/" class="text-blue-600 underline">https://www.Lucky66.com/</a> Please remember! Make sure not provide personal data and personal transactions in any form and for any reason to other parties on behalf of Lucky66. Our side does not make private chats or calls to all members. Please inform all Referrals/other Members about this to avoid fraud. Thank you for your attention and cooperation.
+            </div>
+          </div>
+        </div>
+      
+        <!-- Notification Icon -->
+        <div class="flex items-center p-0 w-6">
+          <span class="flex items-center">
+            <img src="./images/notification_icon.svg" alt="notification" class="w-6 h-6">
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex items-center justify-between bg-gradient-to-b from-[#fff] to-[#ffcdcd] rounded-t-lg border-t border-[#fff]   px-2.5 w-full h-[100px]">
+        <div class="p-1 flex flex-col items-center">
+                <div class="grid grid-flow-row p-1 text-center">
+                    <div class="mb-1 flex justify-start items-center">
+                        <span class="text-md !text-[#ff5454]" >Login</span>
+                        <span class="mx-2 text-gray-500">or</span>
+                        <span class="text-md text-[#ff5454]">Register</span>
+                    </div>
+                    <div class="text-gray-700">
+                        Login to check balance
+                    </div>
+                </div>
+        </div>
+        
+
+
+        <div class="flex flex-nowrap py-2 ">
+            <div class="flex items-center justify-center h-screen mx-2">
+                <div class=" items-end space-x-4">
+                    <!-- SVG Container -->
+                    <div class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2514_31074)" fill="none"><path d="M16.1984 4.35938C13.0544 4.35938 10.4983 6.91549 10.4983 10.0596C10.4983 13.1438 12.9104 15.6399 16.0544 15.7479C16.1504 15.7359 16.2464 15.7359 16.3184 15.7479H16.4024C17.8777 15.6986 19.276 15.0776 20.3017 14.0161C21.3274 12.9546 21.9 11.5357 21.8986 10.0596C21.8986 6.91549 19.3425 4.35938 16.1984 4.35938Z" fill="#FFC1C1"></path><path d="M22.2942 18.9358C18.9462 16.7037 13.486 16.7037 10.1139 18.9358C8.5899 19.9558 7.74988 21.3359 7.74988 22.812C7.74988 24.288 8.5899 25.6561 10.1019 26.6641C11.782 27.7922 13.99 28.3562 16.1981 28.3562C18.4061 28.3562 20.6142 27.7922 22.2942 26.6641C23.8063 25.6441 24.6463 24.276 24.6463 22.788C24.6343 21.3119 23.8063 19.9438 22.2942 18.9358Z" fill="#FFC1C1"></path><path d="M29.3861 10.7627C29.5781 13.0908 27.9221 15.1309 25.63 15.4069H25.57C25.498 15.4069 25.426 15.4069 25.366 15.4309C24.202 15.4909 23.134 15.1189 22.33 14.4349C23.566 13.3309 24.274 11.6748 24.13 9.87471C24.0477 8.93867 23.7298 8.03869 23.206 7.25859C23.8348 6.95268 24.5286 6.80433 25.2275 6.82636C25.9264 6.84838 26.6095 7.04012 27.2178 7.38502C27.8261 7.72992 28.3413 8.21764 28.7191 8.80609C29.0968 9.39455 29.3258 10.0661 29.3861 10.7627Z" fill="#E85F5F"></path><path d="M31.7848 21.8677C31.6888 23.0317 30.9448 24.0398 29.6968 24.7238C28.4967 25.3838 26.9847 25.6958 25.4847 25.6598C26.3487 24.8798 26.8527 23.9078 26.9487 22.8757C27.0687 21.3877 26.3607 19.9596 24.9446 18.8195C24.1406 18.1835 23.2046 17.6795 22.1846 17.3075C24.8366 16.5394 28.1727 17.0555 30.2248 18.7115C31.3288 19.5996 31.8928 20.7156 31.7848 21.8677Z" fill="#E85F5F"></path><path d="M2.99497 10.7627C2.80297 13.0908 4.45901 15.1309 6.75106 15.4069H6.81107C6.88307 15.4069 6.95507 15.4069 7.01507 15.4309C8.1791 15.4909 9.24713 15.1189 10.0511 14.4349C8.81512 13.3309 8.1071 11.6748 8.2511 9.87471C8.33344 8.93867 8.65132 8.03869 9.17512 7.25859C8.54632 6.95268 7.85254 6.80433 7.15362 6.82636C6.4547 6.84838 5.77163 7.04012 5.16334 7.38502C4.55505 7.72992 4.03979 8.21764 3.66203 8.80609C3.28426 9.39455 3.05533 10.0661 2.99497 10.7627Z" fill="#E85F5F"></path><path d="M0.597392 21.8696C0.693394 23.0337 1.43741 24.0417 2.68545 24.7257C3.88548 25.3858 5.39751 25.6978 6.89755 25.6618C6.03353 24.8818 5.52952 23.9097 5.43351 22.8777C5.31351 21.3896 6.02153 19.9615 7.43756 18.8215C8.24158 18.1855 9.17761 17.6814 10.1976 17.3094C7.54557 16.5414 4.20948 17.0574 2.15743 18.7135C1.0534 19.6015 0.489389 20.7176 0.597392 21.8696Z" fill="#E85F5F"></path></g><defs><clipPath id="clip0_2514_31074"><rect width="32" height="32.0008" fill="white" transform="translate(0.198853 0.359375)"></rect></clipPath></defs></svg>
+                    </div>
+                    <!-- Text Container -->
+                    <div class="text-gray-800 text-center font-medium">
+                        AGENT
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center h-screen mx-2">
+                <div class=" items-end space-x-4">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.68 27.0523C17.8662 27.0523 20.9218 25.7866 23.1747 23.5337C25.4277 21.2808 26.6934 18.2251 26.6934 15.039C26.6934 11.8528 25.4277 8.79721 23.1747 6.54427C20.9218 4.29134 17.8662 3.02565 14.68 3.02565C11.4939 3.02565 8.43825 4.29134 6.18531 6.54427C3.93237 8.79721 2.66669 11.8528 2.66669 15.039C2.66669 18.2251 3.93237 21.2808 6.18531 23.5337C8.43825 25.7866 11.4939 27.0523 14.68 27.0523Z" fill="#FFC1C1"></path><path d="M17.4835 17.4325C16.787 18.129 15.8422 18.5203 14.8571 18.5203C13.872 18.5203 12.9273 18.129 12.2307 17.4325C11.5342 16.7359 11.1428 15.7912 11.1428 14.8061C11.1428 13.821 11.5342 12.8762 12.2307 12.1797C12.9273 11.4831 13.872 11.0918 14.8571 11.0918C15.8422 11.0918 16.787 11.4831 17.4835 12.1797C18.1801 12.8762 18.5714 13.821 18.5714 14.8061C18.5714 15.7912 18.1801 16.7359 17.4835 17.4325Z" stroke="#E85F5F" stroke-width="1.71429px" fill="none"></path><path d="M29.32 25.6258C28.88 24.8124 27.9467 24.3591 26.6933 24.3591C25.7467 24.3591 24.9333 24.7458 24.4533 25.4124C23.9733 26.0791 23.8667 26.9724 24.16 27.8658C24.7333 29.5991 25.7333 29.9858 26.28 30.0524C26.36 30.0658 26.44 30.0658 26.5333 30.0658C27.12 30.0658 28.0267 29.8124 28.9067 28.4924C29.6133 27.4658 29.7467 26.4391 29.32 25.6258Z" fill="#E85F5F"></path></svg>
+                    <div class="text-gray-800 text-center font-medium">
+                        SRCH
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center h-screen mx-2">
+                <div class=" items-end space-x-4">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.6667 12.359C22.6667 17.519 18.1867 21.6923 12.6667 21.6923L11.4267 23.1857L10.6934 24.0657C10.0667 24.8123 8.86669 24.6523 8.45335 23.759L6.66669 19.8257C4.24002 18.119 2.66669 15.4123 2.66669 12.359C2.66669 7.19898 7.14669 3.02565 12.6667 3.02565C16.6934 3.02565 20.1734 5.25232 21.7334 8.45232C22.3334 9.63898 22.6667 10.959 22.6667 12.359Z" fill="#FFC1C1"></path><path d="M29.3333 17.5059C29.3333 20.5592 27.76 23.2659 25.3333 24.9726L23.5466 28.9059C23.1333 29.7992 21.9333 29.9726 21.3066 29.2126L19.3333 26.8392C16.1066 26.8392 13.2266 25.4126 11.4266 23.1859L12.6666 21.6926C18.1866 21.6926 22.6666 17.5192 22.6666 12.3592C22.6666 10.9592 22.3333 9.63923 21.7333 8.45256C26.0933 9.45256 29.3333 13.1326 29.3333 17.5059ZM16 13.3592H9.33331C8.78665 13.3592 8.33331 12.9059 8.33331 12.3592C8.33331 11.8126 8.78665 11.3592 9.33331 11.3592H16C16.5466 11.3592 17 11.8126 17 12.3592C17 12.9059 16.5466 13.3592 16 13.3592Z" fill="#E85F5F"></path></svg>
+                    <div class="text-gray-800 text-center font-medium">
+                        CS
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center h-screen mx-2">
+                <div class=" items-end space-x-4">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 29.6923C23.364 29.6923 29.3334 23.723 29.3334 16.359C29.3334 8.99498 23.364 3.02565 16 3.02565C8.63602 3.02565 2.66669 8.99498 2.66669 16.359C2.66669 23.723 8.63602 29.6923 16 29.6923Z" fill="#FFC1C1"></path><path d="M16 20.3724C15.7467 20.3724 15.4933 20.2791 15.2933 20.0791L10.5867 15.3724C10.4007 15.1842 10.2964 14.9303 10.2964 14.6657C10.2964 14.4012 10.4007 14.1473 10.5867 13.9591C10.9733 13.5724 11.6133 13.5724 12 13.9591L16 17.9591L20 13.9591C20.3867 13.5724 21.0267 13.5724 21.4133 13.9591C21.8 14.3457 21.8 14.9857 21.4133 15.3724L16.7067 20.0791C16.5067 20.2791 16.2533 20.3724 16 20.3724Z" fill="#E85F5F"></path></svg>
+                    <div class="text-gray-800 text-center font-medium">
+                        MORE
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="flex pt-2">
+        <div class="gird grid-flow-col  bg-gray-100 " style="border-radius: 0 12px 12px 0;">
+           
+            <div class="flex  items-center justify-center w-[70px] h-[60px] bg-[#ff5454] py-10">
+                    <a class="items-center text-center p-2 ">
+                        <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/hot_active.png" alt="hot">
+                        <div class="text-sm font-semibold text-white ">Hot</div>
+                    </a>
+            </div> 
+
+
+            <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/lottery.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/competition.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/chess.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/fish.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/slot.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/live.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+
+             <div class="flex  items-center justify-center " style="width: 70px; height: 60px;">
+                <a class="items-center text-center p-2 hover:bg-gray-200 rounded-md">
+                    <img  style="width: 32px; height: 32px;"  class=" mb-2" src="./images/sport.png" alt="hot">
+                    <div class="text-sm font-semibold text-blue-500">Hot</div>
+                </a>
+             </div> 
+             
+        </div>
+        <div>mmmmmmmm</div>
+    </div>
+    
+      
+    
+
+  <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6">
+    <h1 class="text-3xl font-bold text-purple-600">Welcome to Tailwind CSS</h1>
+    <p class="text-gray-700 mt-4">This is your first HTML file using Tailwind CSS and PostCSS!</p>
+    <button class="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-700 mt-4">Click Me!</button>
+  </div>
+
+
+   
+</body>
+</html>
